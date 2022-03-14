@@ -19,10 +19,15 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     } 
-
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 });
 
+//Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
 
 //Handle click on "Contact me" button on home
 const contactMe = document.querySelector('.home__contact');
