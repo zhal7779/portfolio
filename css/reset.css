@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: 0;
+}
+button:focus {
+  outline: 1px solid var(--color-accent);
+}
