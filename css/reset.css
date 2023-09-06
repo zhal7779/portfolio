@@ -2,8 +2,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-size: 62.5%;
+  line-height: 1.285;
+}
 body {
   font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
 }
 
 h1,
