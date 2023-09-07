@@ -357,3 +357,40 @@
   height: 2px;
   background-color: var(--color-accent);
 }
+
+/*Arrow Button */
+
+.arrow-btn {
+  background-color: var(--color-primary);
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 4.5rem;
+  box-shadow: 3px 3px 0px 0px var(--color-accent);
+}
+
+/* Footer */
+
+#contact {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.contact-link {
+  transition: color 250ms ease-in;
+}
+.contact-link:hover {
+  color: var(--color-accent);
+}
