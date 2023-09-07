@@ -358,6 +358,45 @@
   background-color: var(--color-accent);
 }
 
+/* Other Experience */
+
+.experience-title {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0 1rem 0;
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-primary-variant);
+  filter: brightness(150%);
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.experience-item {
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.experience-item-title {
+  font-size: 1.2rem;
+}
+.experience-item-strong {
+  color: var(--color-accent);
+  filter: brightness(70%);
+}
+
 /*Arrow Button */
 
 .arrow-btn {
