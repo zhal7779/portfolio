@@ -3,9 +3,7 @@ const header = document.querySelector('.header');
 const headerHeight = header.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-
-  if (scrollY > headerHeight) {
+  if (window.scrollY > headerHeight) {
     header.classList.add('header-dark');
   } else {
     header.classList.remove('header-dark');
@@ -17,7 +15,16 @@ const homeContainer = document.querySelector('.home-container');
 const homeContainerHeight = home.offsetHeight;
 
 document.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  console.log(1 - scrollY / homeContainerHeight);
-  homeContainer.style.opacity = 1 - scrollY / homeContainerHeight;
+  homeContainer.style.opacity = 1 - window.scrollY / homeContainerHeight;
+});
+
+//home 화면일 경우 화살표 아이콘 숨기기
+const arrowBtn = document.querySelector('.arrow-btn');
+
+document.addEventListener('scroll', () => {
+  if (homeContainerHeight / 2 < window.scrollY) {
+    arrowBtn.style.opacity = 1;
+  } else {
+    arrowBtn.style.opacity = 0;
+  }
 });
