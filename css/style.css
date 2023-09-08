@@ -36,6 +36,10 @@
   background: var(--color-white);
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
 ::-webkit-scrollbar-thumb {
   background: #adabab;
   border: 2px solid var(--color-white);
@@ -133,7 +137,7 @@
   margin: 1rem 0;
 }
 .home-title-strong {
-  color: #03e8f9;
+  color: var(--color-accent);
 }
 
 .home-description {
