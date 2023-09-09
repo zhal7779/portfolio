@@ -104,6 +104,7 @@
 .header-menu-item {
   padding: 8px 16px;
   font-size: 1.2rem;
+  border-bottom: 1px solid transparent;
 }
 
 .header-menu-item:hover {
@@ -114,6 +115,16 @@
   border: 1px solid var(--color-accent);
   border-radius: 4px;
 }
+
+.menu-toggle {
+  font-size: 2rem;
+  color: var(--color-text);
+  display: none;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+}
+
 /* Home */
 
 #home {
@@ -475,6 +486,7 @@
   .header {
     flex-direction: column;
     align-items: start;
+    background-color: var(--color-primary);
   }
   .header-nav {
     width: 100%;
@@ -483,8 +495,20 @@
   .header-menu {
     flex-direction: column;
     text-align: center;
-    padding: 1rem 4rem;
+    margin: 1rem 2rem;
     gap: 1rem;
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-menu.open {
+    display: flex;
+  }
+  .header-menu-item {
+    display: block;
   }
   #home {
     padding-bottom: 3rem;
