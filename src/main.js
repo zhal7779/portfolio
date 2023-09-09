@@ -1,3 +1,5 @@
+'use strict!';
+
 //Header 스크롤시 다크 스타일로 적용
 const header = document.querySelector('.header');
 const headerHeight = header.getBoundingClientRect().height;
@@ -14,7 +16,7 @@ document.addEventListener('scroll', () => {
 const toggleBtn = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.header-menu');
 const menuItem = document.querySelector('.header-menu-item');
-console.log(menuItem);
+
 toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('open');
 });

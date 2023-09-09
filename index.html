@@ -34,7 +34,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
     <!--Javascipt-->
-    <script src="src/main.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
   </head>
   <body>
     <!--Header-->
@@ -214,24 +215,28 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category-selected">
+              <button class="category category-selected" data-key="all">
                 All<span class="category-count">4</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-key="front">
                 Front-end<span class="category-count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-key="back">
                 Back-end<span class="category-count">1</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
-              <a href="http://www.moyeora-racer.com/" target="_blank">
+            <li class="project" data-value="front">
+              <a
+                href="http://www.moyeora-racer.com/"
+                data-type="front"
+                target="_blank"
+              >
                 <img
                   src="assets/img/project1.png"
                   alt="project1"
@@ -243,8 +248,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="https://ticketwantit.shop/" target="_blank">
+            <li class="project" data-value="front">
+              <a
+                href="https://ticketwantit.shop/"
+                data-type="back"
+                target="_blank"
+              >
                 <img
                   src="assets/img/project2.png"
                   alt="project2"
@@ -256,8 +265,12 @@
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="http://gamezone.gomao9.com/" target="_blank">
+            <li class="project" data-value="back">
+              <a
+                href="http://gamezone.gomao9.com/"
+                data-type="front"
+                target="_blank"
+              >
                 <img
                   src="assets/img/project3.png"
                   alt="project3"
@@ -272,7 +285,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-value="front">
               <img
                 src="assets/img/project4.png"
                 alt="project4"
