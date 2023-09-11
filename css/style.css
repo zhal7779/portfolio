@@ -140,7 +140,7 @@
   font-size: 3rem;
   margin: 1rem 0;
   color: var(--color-primary-variant);
-  filter: brightness(200%);
+  filter: brightness(150%);
 }
 .home-title-strong {
   color: var(--color-text-black);
@@ -150,11 +150,16 @@
   font-size: 1.3rem;
 }
 
-.home-contact {
+.home-btn-container {
+  margin: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-btn {
   display: inline-block;
-  background-color: var(--color-text-black);
-  padding: 0.6rem 1rem;
-  margin: 2rem;
+  padding: 0.7rem 1.5rem;
   font-weight: bold;
   color: var(--color-text-white);
   border-radius: 4px;
@@ -162,7 +167,18 @@
   transition: all 250ms ease;
 }
 
-.home-contact:hover {
+.home-btn.contact {
+  background-color: var(--color-yellow);
+  border: 1px solid;
+  color: var(--color-text-black);
+}
+
+.home-btn.resume {
+  background-color: var(--color-text-black);
+  color: var(--color-text-white);
+}
+
+.home-btn:hover {
   transform: scale(1.1);
 }
 /* About */
@@ -438,8 +454,8 @@
   font-size: 1.2rem;
 }
 .experience-item-strong {
-  color: var(--color-primary-variant);
-  filter: brightness(150%);
+  color: var(--color-accent);
+  filter: brightness(90%);
 }
 
 /*Arrow Button */
