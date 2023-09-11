@@ -2,20 +2,27 @@
 
 //Header 스크롤시 다크 스타일로 적용
 const header = document.querySelector('.header');
+const menuItems = document.querySelectorAll('.header-menu-item');
+
 const headerHeight = header.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
   if (window.scrollY > headerHeight) {
     header.classList.add('header-dark');
+    menuItems.forEach((menuItem) => {
+      menuItem.classList.add('header-dark');
+    });
   } else {
     header.classList.remove('header-dark');
+    menuItems.forEach((menuItem) => {
+      menuItem.classList.remove('header-dark');
+    });
   }
 });
 
 // Navbar 토글 버튼 클릭시 메뉴 보임 처리
 const toggleBtn = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.header-menu');
-const menuItem = document.querySelector('.header-menu-item');
 
 toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('open');
