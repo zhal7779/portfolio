@@ -36,7 +36,7 @@ function filterByCategory(projects, category) {
   });
 }
 
-// 프로젝트 클릭시 프로젝트 설명 보임
+// 프로젝트 클릭시 프로젝트마다 설명 보임
 const descriptionItems = document.querySelectorAll('.description-item');
 
 projects.forEach((project) => {

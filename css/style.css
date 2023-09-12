@@ -482,6 +482,7 @@
   align-items: center;
   transition: all 250ms ease-in;
   transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .project-meatadata:hover {

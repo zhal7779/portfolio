@@ -370,30 +370,250 @@
           </ul>
           <ul class="project-description">
             <li class="description-item" data-project-value="moyera-racer">
-              <p>모여라레이서(Moyeora-Racer)</p>
-              <p>링크: https://github.com/zhal7779/FE-Mora</p>
-              <p>엘리스 교육생 및 수료생들을 위한 커뮤니티</p>
-              <p>TypeScript, React.js, React-Query</p>
+              <div>
+                <p>모여라레이서(Moyeora-Racer)</p>
+                <p>엘리스 교육생 및 수료생들을 위한 커뮤니티</p>
+                <p>[사용 스택] TypeScript, React.js, React-Query</p>
+                <p>[인원 및 포지션] FE 4명 / BE 3명 position: Frontend</p>
+                <p>[기간] 2023.05 ~ 2023.07</p>
+                <p>[테스트아이디] ID : elice@gmail.com PW: elice1234</p>
+              </div>
+              <div>
+                <p>[목적]</p>
+                <ul>
+                  <li>
+                    레이서 전용 커뮤니티로 레이서들의 적극적 정보 공유와 소통
+                    도움
+                  </li>
+                  <li>캘린더와 알림으로 중요 일정 리마인드</li>
+                  <li>
+                    커피챗을 통해 후배 기수는 선배 기수에게 개발 및 취업 정보
+                    습득
+                  </li>
+                  <li>
+                    커피챗을 통해 선배 기수는 멘토링 경험 습득과 친목 도모
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[역할]</p>
+                <ul>
+                  <li>
+                    비회원 접근 페이지, 공지사항, 일정페이지, 오픈프로필 페이지,
+                    전체 검색 페이지, 알림 모달, 헤더(메뉴), 푸터 UI 및 기능
+                    구현
+                  </li>
+                  <li>각 페이지 마다 페이지네이션 또는 무한스크롤 적용</li>
+                  <li>반응형 웹 적용</li>
+                </ul>
+              </div>
+              <div>
+                <p>[성과]</p>
+                <ul>
+                  <li>
+                    코드 유지보수성 및 재활용성을 높이기 위해 컴포넌트 추상화
+                  </li>
+                  <li>
+                    댓글 알림 및 중요 일정 알림을 서버와 polling 방식으로 응답을
+                    주고 받아 실시간으로 업데이트하여 사용자에게 최신 정보를
+                    지속적으로 전달
+                  </li>
+                  <li>
+                    react-query를 통해 서버에 요청하여 받아온 데이터를 캐싱하여,
+                    이후 동일한 요청을 할 때 불필요한 서버 호출을 최소화
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[배운점 및 느낀점]</p>
+                <ul>
+                  <li>
+                    <strong>데이터 캐싱 개념 이해와 활용 가능</strong>
+                    <p>
+                      데이터 캐싱을 활용하여 서버에 반복 요청을 줄여 네트워크
+                      트래픽 감소하며 성능을 향상 시킬 수 있음
+                    </p>
+                  </li>
+                  <li>
+                    <strong>중복되는 로직은 custom hook을 만들어 활용</strong>
+                    <p>
+                      프로젝트 중 무한 스크롤을 구현하기 위해 여러 컴포넌트에서
+                      겹치는 로직을 hook으로 따로 만듬, 이로 인해 코드의 중복을
+                      최소화 및 유지보수성을 향상 시켜 줌
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://github.com/zhal7779/FE-Mora">
+                <i class="fa-brands fa-github"></i>깃허브 바로가기</a
+              >
+              <a href="http://www.moyeora-racer.com/">
+                <i class="fa-solid fa-house"></i>웹사이트 바로가기</a
+              >
             </li>
             <li class="description-item" data-project-value="ticket-want-it">
-              <p>티켓원잇(Ticket-One-It)</p>
-              <p>링크: https://github.com/yooha0518/Be-TicketWantit</p>
-              <p>전시, 공연 등 다양한 티켓을 구매 할 수 있는 서비스</p>
-              <p>Node.js, Express, MongoDB</p>
+              <div>
+                <p>티켓원잇(Ticket-One-It)</p>
+                <p>전시, 공연 등 다양한 티켓을 구매 할 수 있는 서비스</p>
+                <p>[사용 스택] Node.js, Express, MongoDB</p>
+                <p>[인원 및 포지션] FE 3명 / BE 3명 position: Backend</p>
+                <p>[기간] 2023.04 ~ 2023.05</p>
+                <p>[테스트아이디] ID: admin@gmail.com PW: admin</p>
+              </div>
+              <div>
+                <p>[목적]</p>
+                <ul>
+                  <li>
+                    전시, 공연, 뮤지컬 등 문화 생활을 즐기는 사람들을 위한
+                    웹사이트
+                  </li>
+                  <li>
+                    문화 생활을 즐기기 전 실제 소장 가능한 티켓을 제공하여
+                    설렘을 줌
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[역할]</p>
+                <ul>
+                  <li>관리자 페이지 카테고리 목록, 상품 CRUD API 구현</li>
+                  <li>
+                    메인페이지 상품 검색, 상품 목록(필터 및 페이지네이션),
+                    상품상세 API 구현
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[성과]</p>
+                <ul>
+                  <li>
+                    MVC 패턴을 적용하여 코드간의 종속성을 줄이고 구성요소간의
+                    역할을 명확하게 하여 유지보수성을 높임
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[배운점 및 느낀점]</p>
+                <ul>
+                  <li>
+                    <strong>클라이언트와 서버 간의 통신 흐름 이해</strong>
+                    <p>
+                      서버 API 개발을 통해 클라이언트와 서버 간의 데이터 교환과
+                      상호작용에 대한 전반적인 흐름을 익힐 수 있었으며 이로 인해
+                      문제 해결과 원활한 소통 가능
+                    </p>
+                  </li>
+                  <li>
+                    <strong>NoSQL 데이터베이스 시스템과 원리 이해</strong>
+                    <p>
+                      기존의 관계형 데이터베이스 시스템과는 다른 방식으로
+                      데이터를 다루고 저장하는 것을 이해하여 상황에 따라 적절한
+                      데이터베이스 사용 가능
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://github.com/yooha0518/Be-TicketWantit">
+                <i class="fa-brands fa-github"></i>깃허브 바로가기</a
+              >
+              <a href="https://ticketwantit.shop/">
+                <i class="fa-solid fa-house"></i>웹사이트 바로가기</a
+              >
             </li>
             <li class="description-item" data-project-value="game-zone">
-              <p>게임존</p>
-              <p>링크: https://github.com/MZgaMeZone/gaMeZone</p>
-              <p>
-                MZ세대, 1980년대부터 2010년대까지 다양한 연령이 즐길 수 있는 웹
-                게임 사이트
-              </p>
-              <p>TypeScript, React.js</p>
+              <div>
+                <p>게임존(GaMe-Zone)</p>
+                <p>
+                  MZ세대, 1980년대부터 2010년대까지 다양한 연령이 즐길 수 있는
+                  웹 게임 사이트
+                </p>
+                <p>[사용 스택] TypeScript, React.js</p>
+                <p>[인원 및 포지션] FullStack 6명 position: FullStack</p>
+                <p>[기간] 2023.05 ~ 2023.06</p>
+              </div>
+              <div>
+                <p>[목적]</p>
+                <ul>
+                  <li>
+                    다양한 장르의 웹 미니 게임을 제공해주며 랭킹 시스템을 통해
+                    유저끼리 경쟁하며 게임에 대한 흥미와 재미를 향상 시켜 준다
+                  </li>
+                  <li>
+                    UI 컨셉을 '윈도우 97'로 하여 이용자의 옛 추억을 되살려주다
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[역할]</p>
+                <ul>
+                  <li>
+                    관리자 페이지 게임 정보 등록, 카테고리 등록, 게임 기록 관리
+                    (상세보기, 삭제) , 회원 관리 (회원 탈퇴) 기능 및 UI 구현
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[배운점 및 느낀점]</p>
+                <ul>
+                  <li>
+                    <strong>컴포넌트 설계의 중요성</strong>
+                    <p>
+                      개발 전 설계를 하지 않으면 컴포넌트 하나에 코드가 길어져서
+                      가독성이 떨어지며 중복되는 코드나 컴포넌트들이 많아져
+                      재사용성이 떨어짐, 유지 보수 및 재사용을 위해 설계 후
+                      개발을 시작해야 되는 걸 느낌
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://github.com/MZgaMeZone/gaMeZone">
+                <i class="fa-brands fa-github"></i>깃허브 바로가기</a
+              >
+              <a href="http://gamezone.gomao9.com/">
+                <i class="fa-solid fa-house"></i>웹사이트 바로가기</a
+              >
             </li>
             <li class="description-item" data-project-value="data-report">
-              <p>데이터 리포트 솔루션 - 스마트 팩토리</p>
-              <p>실시간 재고를 시각화 하여 재고관리 웹 구현 프로젝트</p>
-              <p>React, Chart.js</p>
+              <div>
+                <p>데이터 리포트 솔루션 - 노리스페이스(Freelancer)</p>
+                <p>실시간 재고를 시각화 하여 재고관리 웹 구현 프로젝트</p>
+                <p>[사용 스택] React, Chart.js</p>
+                <p>
+                  [인원 및 포지션] FE 2명 / BE 1명 position: Frontend Developer
+                </p>
+                <p>[기간] 2022.08 ~ 2022.11</p>
+              </div>
+              <div>
+                <p>[프로젝트 개요]</p>
+                <ul>
+                  <li>
+                    ‘데이터 리포트 솔루션’ 실시간 재고를 시각화 하여 재고관리 웹
+                    구현 프로젝트
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[프로젝트 내용]</p>
+                <ul>
+                  <li>
+                    재고 현황 실시간 DB 데이터를 활용하여, 동적인 그래프가
+                    시각화되는 재고 관리 웹페이지
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>[역할]</p>
+                <ul>
+                  <li>
+                    Chart.js 라이브러리 활용하여 재고 현황 동적인 그래프 시각화
+                    구현
+                  </li>
+                  <li>
+                    아이템 및 디바이스별로 재고 현황 상세 확인 , 재고관리 (추가,
+                    수정, 삭제) UI 및 기능 구현
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
