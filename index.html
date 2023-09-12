@@ -289,7 +289,7 @@
       <section id="projects" class="section">
         <div class="max-container">
           <h2 class="title">My Projects</h2>
-          <p class="description">협업하여 진행한 프로젝트 입니다.</p>
+          <p class="description">협업하여 진행한 대표 프로젝트들 입니다.</p>
           <ul class="categories">
             <li>
               <button class="category category-selected" data-key="all">
@@ -308,61 +308,55 @@
             </li>
           </ul>
           <ul class="projects">
-            <li class="project" data-value="front">
-              <a
-                href="https://github.com/zhal7779/FE-Mora"
-                data-type="front"
-                target="_blank"
-              >
-                <img
-                  src="assets/img/project1.png"
-                  alt="project1"
-                  class="project-img"
-                />
-                <div class="project-meatadata">
-                  <h3 class="project-tilte">모여라 레이서</h3>
-                  <p>엘리스 교육생 및 수료생들을 위한 커뮤니티</p>
-                </div>
-              </a>
+            <li
+              class="project"
+              data-value="front"
+              data-project-key="moyera-racer"
+            >
+              <img
+                src="assets/img/project1.png"
+                alt="project1"
+                class="project-img"
+              />
+              <div class="project-meatadata">
+                <h3 class="project-tilte">모여라 레이서</h3>
+                <p>엘리스 교육생 및 수료생들을 위한 커뮤니티</p>
+              </div>
             </li>
-            <li class="project" data-value="front">
-              <a
-                href="https://github.com/yooha0518/Be-TicketWantit"
-                data-type="back"
-                target="_blank"
-              >
-                <img
-                  src="assets/img/project2.png"
-                  alt="project2"
-                  class="project-img"
-                />
-                <div class="project-meatadata">
-                  <h3 class="project-tilte">티켓원잇</h3>
-                  <p>전시, 공연 등 다양한 티켓을 구매 할 수 있는 웹 사이트</p>
-                </div>
-              </a>
+            <li
+              class="project"
+              data-value="front"
+              data-project-key="ticket-want-it"
+            >
+              <img
+                src="assets/img/project2.png"
+                alt="project2"
+                class="project-img"
+              />
+              <div class="project-meatadata">
+                <h3 class="project-tilte">티켓원잇</h3>
+                <p>전시, 공연 등 다양한 티켓을 구매 할 수 있는 웹 사이트</p>
+              </div>
             </li>
-            <li class="project" data-value="back">
-              <a
-                href="https://github.com/MZgaMeZone/gaMeZone"
-                data-type="front"
-                target="_blank"
-              >
-                <img
-                  src="assets/img/project3.png"
-                  alt="project3"
-                  class="project-img"
-                />
-                <div class="project-meatadata">
-                  <h3 class="project-tilte">게임존</h3>
-                  <p>
-                    MZ세대, 1980년대부터 2010년대까지 다양한 연령이 즐길 수 있는
-                    웹 게임 사이트
-                  </p>
-                </div>
-              </a>
+            <li class="project" data-value="back" data-project-key="game-zone">
+              <img
+                src="assets/img/project3.png"
+                alt="project3"
+                class="project-img"
+              />
+              <div class="project-meatadata">
+                <h3 class="project-tilte">게임존</h3>
+                <p>
+                  MZ세대, 1980년대부터 2010년대까지 다양한 연령이 즐길 수 있는
+                  웹 게임 사이트
+                </p>
+              </div>
             </li>
-            <li class="project" data-value="front">
+            <li
+              class="project"
+              data-value="front"
+              data-project-key="data-report"
+            >
               <img
                 src="assets/img/project4.png"
                 alt="project4"
@@ -372,6 +366,34 @@
                 <h3 class="project-tilte">데이터 리포트 솔루션</h3>
                 <p>실시간 재고를 시각화 하여 재고관리 웹 구현 프로젝트</p>
               </div>
+            </li>
+          </ul>
+          <ul class="project-description">
+            <li class="description-item" data-project-value="moyera-racer">
+              <p>모여라레이서(Moyeora-Racer)</p>
+              <p>링크: https://github.com/zhal7779/FE-Mora</p>
+              <p>엘리스 교육생 및 수료생들을 위한 커뮤니티</p>
+              <p>TypeScript, React.js, React-Query</p>
+            </li>
+            <li class="description-item" data-project-value="ticket-want-it">
+              <p>티켓원잇(Ticket-One-It)</p>
+              <p>링크: https://github.com/yooha0518/Be-TicketWantit</p>
+              <p>전시, 공연 등 다양한 티켓을 구매 할 수 있는 서비스</p>
+              <p>Node.js, Express, MongoDB</p>
+            </li>
+            <li class="description-item" data-project-value="game-zone">
+              <p>게임존</p>
+              <p>링크: https://github.com/MZgaMeZone/gaMeZone</p>
+              <p>
+                MZ세대, 1980년대부터 2010년대까지 다양한 연령이 즐길 수 있는 웹
+                게임 사이트
+              </p>
+              <p>TypeScript, React.js</p>
+            </li>
+            <li class="description-item" data-project-value="data-report">
+              <p>데이터 리포트 솔루션 - 스마트 팩토리</p>
+              <p>실시간 재고를 시각화 하여 재고관리 웹 구현 프로젝트</p>
+              <p>React, Chart.js</p>
             </li>
           </ul>
         </div>

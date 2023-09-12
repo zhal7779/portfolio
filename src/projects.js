@@ -35,3 +35,23 @@ function filterByCategory(projects, category) {
     }
   });
 }
+
+// 프로젝트 클릭시 프로젝트 설명 보임
+const descriptionItems = document.querySelectorAll('.description-item');
+
+projects.forEach((project) => {
+  project.addEventListener('click', (e) => {
+    const selectedKey = project.dataset.projectKey;
+    showDescription(selectedKey);
+  });
+});
+
+function showDescription(selectedKey) {
+  descriptionItems.forEach((item) => {
+    if (selectedKey === item.dataset.projectValue) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
