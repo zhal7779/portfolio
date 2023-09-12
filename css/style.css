@@ -257,6 +257,27 @@
 #skills {
   background-color: var(--color-bage);
   color: var(--color-text-black);
+  position: relative;
+}
+
+.custom-shape-divider-top-1694539826 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1694539826 svg {
+  position: relative;
+  display: block;
+  width: calc(256% + 1.3px);
+  height: 39px;
+}
+
+.custom-shape-divider-top-1694539826 .shape-fill {
+  fill: #ffffff;
 }
 
 .max-container.skills-container {
@@ -352,8 +373,28 @@
 /* Projects */
 
 #projects {
+  position: relative;
   background-color: var(--color-pink-light);
   color: var(--color-text-black);
+}
+.custom-shape-divider-top-1694540305 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1694540305 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 52px;
+}
+
+.custom-shape-divider-top-1694540305 .shape-fill {
+  fill: #f1f1ea;
 }
 
 .categories {
@@ -460,7 +501,28 @@
 }
 
 /* Other Experience */
+#otherExperience {
+  position: relative;
+}
+.custom-shape-divider-top-1694540478 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
 
+.custom-shape-divider-top-1694540478 svg {
+  position: relative;
+  display: block;
+  width: calc(125% + 1.3px);
+  height: 65px;
+}
+
+.custom-shape-divider-top-1694540478 .shape-fill {
+  fill: #f5ebf1;
+}
 .experience-container {
   display: flex;
   flex-direction: column;
