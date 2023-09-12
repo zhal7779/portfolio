@@ -14,9 +14,21 @@
   font-size: 2.5rem;
   margin: 1rem 0;
 }
+
+.sub-title {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0 1rem 0;
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-primary-variant);
+  filter: brightness(150%);
+}
+
 .description {
   font-size: 1.5rem;
-  margin: 0.5rem 0;
+  margin: 1rem 2rem;
 }
 
 /* Header */
@@ -183,11 +195,79 @@
 }
 /* About */
 
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--color-primary-variant);
+
+  filter: brightness(150%);
+  color: var(--color-text-white);
+  padding: 3rem;
+  gap: 1rem;
+  border-radius: 8px;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.4);
+  margin: 2rem 0;
+}
+.advantage {
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.advantage:hover {
+  color: var(--color-accent);
+}
+
+.advantage-icon {
+  color: var(--color-accent);
+}
+
+.jobs {
+  text-align: start;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.job-name {
+  color: var(--color-text-black);
+  font-size: 1.2rem;
+}
+
+.job-period {
+  color: var(--color-text-black);
+  font-size: 0.9rem;
+}
+
+.jobs-icon {
+  color: var(--color-accent);
+  filter: brightness(90%);
+  font-size: 1.8rem;
+  padding-right: 0.5rem;
+}
+
+/* Skills */
+
+#skills {
+  background-color: var(--color-bage);
+  color: var(--color-text-black);
+}
+
+.max-container.skills-container {
+  padding: 2rem 3rem;
+}
+
 .majors {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin: 2.5rem 0;
+  margin-bottom: 5rem;
 }
 .major {
   flex: 1;
@@ -215,47 +295,14 @@
   transform: scale(1.2) rotate(-15deg);
 }
 
-.jobs {
-  text-align: start;
-}
-
-.job {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 1rem;
-}
-
-.job-name {
-  color: var(--color-text-black);
-}
-
-.job-period {
-  color: var(--color-text-black);
-  font-size: 0.8rem;
-}
-
-.jobs-icon {
-  color: var(--color-primary-variant);
-  font-size: 1.5rem;
-  padding-right: 0.5rem;
-}
-
-/* Skills */
-
-#skills {
-  background-color: var(--color-bage);
-  color: var(--color-text-black);
-}
-
 .skills {
   display: grid;
   grid-template-columns: 6fr 4fr;
-  margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
   color: var(--color-text-white);
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 5rem;
 }
 .skills-title {
   font-size: 1.2rem;
@@ -413,17 +460,6 @@
 }
 
 /* Other Experience */
-
-.experience-title {
-  display: flex;
-  align-items: center;
-  margin: 3rem 0 1rem 0;
-  gap: 1rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: var(--color-primary-variant);
-  filter: brightness(150%);
-}
 
 .experience-container {
   display: flex;
