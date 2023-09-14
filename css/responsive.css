@@ -1,0 +1,231 @@
+/* 반응형 */
+
+/* 태블릿 */
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--color-text-black);
+    color: var(--color-text-white);
+  }
+  .header-nav {
+    width: 100%;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 2rem;
+    gap: 1rem;
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-menu.open {
+    display: flex;
+  }
+  .header-menu-item {
+    display: block;
+  }
+
+  .sub-title {
+    justify-content: center;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* 태블릿, 모바일 가로 */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  #home {
+    padding-bottom: 3rem;
+  }
+  .home-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .majors {
+    flex-direction: column;
+    align-items: center;
+  }
+  .major {
+    width: 25rem;
+  }
+  .jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 25rem;
+    margin: auto;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  .categories {
+    flex-direction: column;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .description-container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-title {
+    font-size: 1.6rem;
+  }
+  .experience-container {
+    padding: 0;
+  }
+
+  .experience-item-title {
+    font-size: 1.1rem;
+  }
+
+  .arrow-btn {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    line-height: 3rem;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+  .sub-title {
+    font-size: 1.5rem;
+  }
+
+  .header-logo-title {
+    font-size: 1.4rem;
+  }
+  .header-logo-img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .header-menu {
+    margin: 1rem 1rem;
+  }
+  .menu-toggle {
+    top: 1.4rem;
+    font-size: 1.6rem;
+  }
+  .home-profile {
+    width: 200px;
+    height: 200px;
+  }
+  #home {
+    padding: 8rem 1rem 5rem 1rem;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+  .home-description {
+    font-size: 1.1rem;
+  }
+  .home-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.1rem;
+  }
+  #skills::after {
+    width: 0;
+  }
+
+  .advantages {
+    padding: 1rem;
+  }
+
+  .advantage {
+    font-size: 1rem;
+  }
+
+  .job-name {
+    font-size: 1rem;
+  }
+  .jobs-icon {
+    font-size: 1.5rem;
+  }
+  .max-container.skills-container {
+    padding: 0;
+  }
+
+  .major {
+    width: 18rem;
+  }
+  .major-title {
+    font-size: 1.2rem;
+  }
+
+  #projects::after {
+    width: 0;
+  }
+
+  .project-meatadata {
+    font-size: 0.7rem;
+  }
+  .project-tilte::after {
+    margin: 0.2rem 0;
+  }
+  .description-content {
+    padding: 2rem 1rem;
+  }
+  .description-briefly {
+    padding-bottom: 2rem;
+  }
+  .description-briefly-content {
+    margin: 0 0.5rem;
+  }
+  .description-content.information {
+    font-size: 1rem;
+  }
+  .description-title {
+    font-size: 1.2rem;
+  }
+  .description-project-img {
+    width: 15rem;
+  }
+  .description-btn {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .description-content-title {
+    font-size: 1.1rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+  .description-text-strong {
+    font-size: 1.1rem;
+  }
+
+  .experience-item {
+    align-items: center;
+  }
+}

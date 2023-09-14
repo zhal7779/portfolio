@@ -1,6 +1,5 @@
 @import 'reset.css';
 @import 'root.css';
-
 /* Common */
 .section {
   padding: 4rem;
@@ -104,7 +103,7 @@
   color: var(--color-text);
   display: none;
   position: absolute;
-  top: 1.3rem;
+  top: 1.5rem;
   right: 1rem;
 }
 
@@ -192,9 +191,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: var(--color-primary-variant);
-
-  filter: brightness(150%);
+  background-color: var(--color-navy-light);
   color: var(--color-text-white);
   padding: 3rem;
   gap: 1rem;
@@ -695,109 +692,4 @@
 }
 .contact-link:hover {
   color: var(--color-accent);
-}
-
-/* 반응형 */
-
-@media screen and (max-width: 768px) {
-  .section {
-    padding: 3rem 2rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-  .header {
-    flex-direction: column;
-    align-items: start;
-    background-color: var(--color-text-black);
-    color: var(--color-text-white);
-  }
-  .header-nav {
-    width: 100%;
-  }
-
-  .header-menu {
-    flex-direction: column;
-    text-align: center;
-    margin: 1rem 2rem;
-    gap: 1rem;
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .header-menu.open {
-    display: flex;
-  }
-  .header-menu-item {
-    display: block;
-  }
-  #home {
-    padding-bottom: 3rem;
-  }
-  .home-title {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .majors {
-    flex-direction: column;
-    align-items: center;
-  }
-  .major {
-    width: 25rem;
-  }
-  .jobs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 25rem;
-    margin: auto;
-  }
-
-  .skills {
-    grid-template-columns: 1fr;
-  }
-  .categories {
-    flex-direction: column;
-  }
-
-  .category {
-    width: 100%;
-  }
-
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .description-container {
-    grid-template-columns: 1fr;
-  }
-
-  .experience-title {
-    font-size: 1.6rem;
-  }
-  .experience-container {
-    padding: 0;
-  }
-
-  .experience-item-title {
-    font-size: 1.1rem;
-  }
-
-  .arrow-btn {
-    font-size: 2rem;
-    width: 3rem;
-    height: 3rem;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    line-height: 3rem;
-  }
 }
