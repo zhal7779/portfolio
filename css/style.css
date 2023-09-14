@@ -324,13 +324,11 @@
 
 .skills-tools {
   padding: 1rem;
-  background-color: var(--color-primary-variant);
-  filter: brightness(150%);
+  background-color: var(--color-navy-light);
 }
 .skills-etc {
   padding: 1rem;
-  background-color: var(--color-primary-variant);
-  filter: brightness(200%);
+  background-color: var(--color-navy-bright);
 }
 
 .skills-bar {
@@ -512,19 +510,19 @@
 .description-content {
   padding: 2rem 1.5rem;
   color: var(--color-text-white);
-  background-color: var(--color-primary-variant);
 }
 .description-content.information {
+  background-color: var(--color-primary-variant);
   grid-row: span 2;
   font-size: 1.2rem;
 }
 
 .description-content.purpose {
-  filter: brightness(130%);
+  background-color: var(--color-navy-light);
   font-size: 1.1rem;
 }
 .description-content.detail {
-  filter: brightness(160%);
+  background-color: var(--color-navy-bright);
   font-size: 1.1rem;
 }
 .description-briefly {
