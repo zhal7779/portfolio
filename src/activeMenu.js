@@ -1,4 +1,4 @@
-'use strict!';
+'use strict';
 // 스크롤시 섹션id와 동일한 메뉴 활성화
 const sectionIds = [
   '#home',

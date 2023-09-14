@@ -1,4 +1,4 @@
-'use strict!';
+'use strict';
 
 //Header 스크롤시 다크 스타일로 적용
 const header = document.querySelector('.header');

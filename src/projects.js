@@ -1,4 +1,4 @@
-'use strict!';
+'use strict';
 //Projects 카테고리 필터링 기능
 const categories = document.querySelector('.categories');
 const projects = document.querySelectorAll('.project');
