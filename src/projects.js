@@ -37,21 +37,25 @@ function filterByCategory(projects, category) {
 }
 
 // 프로젝트 클릭시 프로젝트마다 설명 보임
+const descriptionList = document.querySelector('.project-description');
 const descriptionItems = document.querySelectorAll('.description-item');
-
 projects.forEach((project) => {
-  project.addEventListener('click', (e) => {
+  project.addEventListener('click', () => {
+    descriptionList.classList.add('animaition');
     const selectedKey = project.dataset.projectKey;
     showDescription(selectedKey);
+    setTimeout(() => {
+      descriptionList.classList.remove('animaition');
+    }, 300);
   });
 });
 
 function showDescription(selectedKey) {
   descriptionItems.forEach((item) => {
     if (selectedKey === item.dataset.projectValue) {
-      item.style.display = 'block';
+      item.classList.add('selected-project');
     } else {
-      item.style.display = 'none';
+      item.classList.remove('selected-project');
     }
   });
 }

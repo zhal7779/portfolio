@@ -369,7 +369,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(300% + 1.3px);
+  width: calc(100% + 1.3px);
   height: 52px;
   overflow: hidden;
   line-height: 0;
@@ -432,7 +432,7 @@
 
 .projects.animaition {
   opacity: 0;
-  transform: scale(0.95) translateY(10px);
+  transform: scale(0.95) translateY(5px);
 }
 
 .project {
@@ -483,8 +483,20 @@
   background-color: var(--color-accent);
 }
 
+.project-description {
+  transition: all 300ms linear;
+}
+
+.project-description.animaition {
+  opacity: 0.9;
+  transform: scale(0.96);
+}
 .description-item {
   display: none;
+}
+
+.description-item.selected-project {
+  display: block;
 }
 
 .description-container {
@@ -589,7 +601,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(125% + 1.3px);
+  width: calc(100% + 1.3px);
   height: 65px;
   overflow: hidden;
   line-height: 0;
