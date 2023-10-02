@@ -355,7 +355,7 @@
 
 #projects {
   position: relative;
-  background-color: var(--color-pink-light);
+  background-color: var(--color-gray-light);
   color: var(--color-text-black);
 }
 
@@ -621,7 +621,7 @@
   height: 65px;
   overflow: hidden;
   line-height: 0;
-  background-color: var(--color-pink-light);
+  background-color: var(--color-gray-light);
   mask: var(--divider-single-wave);
   -webkit-mask: var(--divider-single-wave);
 }
