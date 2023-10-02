@@ -38,9 +38,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!--Javascipt-->
-    <script type="module" src="src/main.js" defer></script>
-    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/loadData.js" defer></script>
+    <script type="module" src="src/header.js" defer></script>
     <script type="module" src="src/activeMenu.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
   </head>
   <body>
     <!--Header-->
@@ -97,151 +98,9 @@
         </div>
       </section>
       <!--About-->
-      <section id="about" class="section max-container">
-        <h2 class="title">About me</h2>
-        <p class="description">
-          지속적으로 기술 스택을 업데이트하고 새로운 기술을 적용하여 서비스를
-          혁신하며, 사용자들에게 더 나은 사용자 경험을 제공하려고 항상
-          노력합니다.
-        </p>
-        <ul class="advantages">
-          <li class="advantage">
-            <i class="fa-solid fa-terminal advantage-icon"></i>
-            <p>웹/앱 서비스의 프론트엔드 개발 경험</p>
-          </li>
-          <li class="advantage">
-            <i class="fa-solid fa-terminal advantage-icon"></i>
-            <p>SPA 방식으로 웹페이지 구현 경험 다수</p>
-          </li>
-          <li class="advantage">
-            <i class="fa-solid fa-terminal advantage-icon"></i>
-            <p>
-              서버 개발 경험으로 클라이언트와 서버 통신에 대한 이해를 바탕으로
-              개발 가능
-            </p>
-          </li>
-          <li class="advantage">
-            <i class="fa-solid fa-terminal advantage-icon"></i>
-            <p>다양한 에러를 접해봄으로써 장애 대응 능력</p>
-          </li>
-          <li class="advantage">
-            <i class="fa-solid fa-terminal advantage-icon"></i>
-            <p>기획 단계부터 시작한 다수의 팀 프로젝트 협업 경험</p>
-          </li>
-        </ul>
-        <ul class="jobs">
-          <li class="job">
-            <i class="fa-solid fa-graduation-cap jobs-icon"></i>
-            <div>
-              <p class="job-name">엘리스 SW 엔지니어 트랙 4기 수료</p>
-              <p class="job-period">2023.02 ~ 2023.06</p>
-            </div>
-          </li>
-          <li class="job">
-            <i class="fa-solid fa-briefcase jobs-icon"></i>
-            <div>
-              <p class="job-name">
-                노리스페이스 Frontend Developer(Freelancer)
-              </p>
-              <p class="job-period">2022.08 ~ 2022.11</p>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <section id="about" class="section max-container"></section>
       <!--Skills-->
-      <section id="skills" class="section">
-        <div class="max-container skills-container">
-          <h2 class="title">My Skills</h2>
-          <p class="sub-title">Skills</p>
-          <ul class="majors">
-            <li class="major">
-              <i class="fa-brands fa-html5 major-icon"></i>
-              <p class="major-title">Front-end</p>
-              <p>
-                HTML, CSS, JavaScript, TypeScript, React, Recoil, React-query,
-                Web APIs
-              </p>
-            </li>
-            <li class="major">
-              <i class="fa-solid fa-server major-icon"></i>
-              <p class="major-title">Back-end</p>
-              <p>JavaScript, NodeJS, ExpressJS, MySQL, MongoDB</p>
-            </li>
-            <li class="major">
-              <i class="fa-solid fa-screwdriver-wrench major-icon"></i>
-              <p class="major-title">Other Tools</p>
-              <p>Git ,GitHub, GitLab, Postman, Notion, Slack, Figma</p>
-            </li>
-          </ul>
-          <p class="sub-title">Attributes</p>
-          <div class="skills">
-            <section class="skills-coding">
-              <h3 class="skills-title">Coding Skills</h3>
-              <ul>
-                <li class="skills-bar">
-                  <div class="bar-metadata">
-                    <span>HTML</span><span>95%</span>
-                  </div>
-                  <div class="bar-bg">
-                    <div class="bar-value" style="width: 95%"></div>
-                  </div>
-                </li>
-                <li class="skills-bar">
-                  <div class="bar-metadata">
-                    <span>CSS</span><span>90%</span>
-                  </div>
-                  <div class="bar-bg">
-                    <div class="bar-value" style="width: 90%"></div>
-                  </div>
-                </li>
-                <li class="skills-bar">
-                  <div class="bar-metadata">
-                    <span>JavaScript</span><span>80%</span>
-                  </div>
-                  <div class="bar-bg">
-                    <div class="bar-value" style="width: 85%"></div>
-                  </div>
-                </li>
-                <li class="skills-bar">
-                  <div class="bar-metadata">
-                    <span>TypeScript</span><span>70%</span>
-                  </div>
-                  <div class="bar-bg">
-                    <div class="bar-value" style="width: 80%"></div>
-                  </div>
-                </li>
-                <li class="skills-bar">
-                  <div class="bar-metadata">
-                    <span>React</span><span>80%</span>
-                  </div>
-                  <div class="bar-bg">
-                    <div class="bar-value" style="width: 90%"></div>
-                  </div>
-                </li>
-              </ul>
-            </section>
-            <section class="skills-tools">
-              <h3 class="skills-title">Tools</h3>
-              <ul>
-                <li>Visual Studio code</li>
-                <li>Figma</li>
-                <li>Notion</li>
-                <li>Slack</li>
-                <li>Postman</li>
-              </ul>
-            </section>
-            <section class="skills-etc">
-              <h3 class="skills-title">Etc</h3>
-              <ul>
-                <li>Git</li>
-                <li>PWA</li>
-                <li>Rinux</li>
-                <li>algorithm</li>
-              </ul>
-            </section>
-          </div>
-        </div>
-      </section>
+      <section id="skills" class="section"></section>
       <!--Projects-->
       <section id="projects" class="section">
         <div class="max-container">
@@ -807,39 +666,7 @@
         </div>
       </section>
       <!--Other Experience-->
-      <section id="otherExperience" class="section">
-        <h2 class="title">Other Experience</h2>
-        <section class="max-container">
-          <p class="sub-title"><i class="fa-solid fa-trophy"></i>Award</p>
-          <ul class="experience-container">
-            <li class="experience-item award">
-              <p class="experience-item-title">
-                엘리스 1차 팀 프로젝트
-                <strong class="experience-item-strong">대상 수상</strong>
-              </p>
-              <p>2023.04.17 ~ 2023.04.28</p>
-            </li>
-            <li class="experience-item award">
-              <p class="experience-item-title">
-                엘리스 2차 팀 프로젝트
-                <strong class="experience-item-strong"
-                  >우수 프로젝트 선정</strong
-                >
-              </p>
-              <p>2023.05.29 ~ 2023.06.16</p>
-            </li>
-          </ul>
-          <p class="sub-title"><i class="fa-solid fa-award"></i>Certificate</p>
-          <ul class="experience-container">
-            <li class="experience-item certificate">
-              <p class="experience-item-title">
-                정보 처리 산업 기사 (한국 산업 인력 공단)
-              </p>
-              <p>2021.11.26</p>
-            </li>
-          </ul>
-        </section>
-      </section>
+      <section id="otherExperience" class="section"></section>
       <!--Arrow Button-->
       <aside>
         <a class="arrow-btn" href="#home" title="back to top">
@@ -848,49 +675,6 @@
       </aside>
     </main>
     <!--Footer-->
-    <footer id="contact" class="section">
-      <div class="max-container">
-        <h2 class="title">Contact</h2>
-        <div class="description">
-          <p>Email. zhal7779@gmail.com</p>
-          <p>phone. 010-2205-9840</p>
-        </div>
-
-        <ul class="contact-links">
-          <li>
-            <a
-              class="contact-link"
-              href="https://github.com/zhal7779"
-              title="github link"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="contact-link"
-              href="https://www.linkedin.com/in/민영-이-37b879271"
-              title="linkendin link"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="contact-link"
-              href="https://acoustic-infinity-a2f.notion.site/Frontend-Developer-97e07927772848cd9fe8d9507a88df4b?pvs=4"
-              title="resume link"
-              target="_blank"
-            >
-              <i class="fa-solid fa-address-card"></i>
-            </a>
-          </li>
-        </ul>
-        <p>CREATOR : 이민영</p>
-        <p>Copyright ⓒ 2023 - 2023 Minyoung. All Rights Reserved.</p>
-      </div>
-    </footer>
+    <footer id="contact" class="section"></footer>
   </body>
 </html>
