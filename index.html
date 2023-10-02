@@ -82,8 +82,8 @@
             <strong class="home-title-strong">이민영</strong>
           </h2>
           <p class="home-description">
-            오늘의 노력이 내일을 위한 준비이며, 계속해서 성장하고 있는 개발자
-            이민영 입니다.
+            좋은 개발자는 기술적으로 훌륭한 개발자가 아니라 사용자의 입장에서
+            생각하는 개발자라고 생각합니다.
           </p>
           <div class="home-btn-container">
             <a class="home-btn contact" href="#contact">Contact</a>
@@ -377,19 +377,26 @@
                   </ul>
                 </section>
                 <section class="description-content purpose">
-                  <p class="description-content-title">[목적]</p>
+                  <p class="description-content-title">[사이트 소개]</p>
                   <ul class="description-text">
                     <li>
-                      레이서 전용 커뮤니티로 레이서들의 적극적 정보 공유와 소통
-                      도움
-                    </li>
-                    <li>캘린더와 알림으로 중요 일정 리마인드</li>
-                    <li>
-                      커피챗을 통해 후배 기수는 선배 기수에게 개발 및 취업 정보
-                      습득
+                      엘리스 트랙 부트 캠프 전용 커뮤니티로 교육생 및 수료생들의
+                      적극적 정보 공유와 소통을 도움 주는 커뮤니티 사이트
                     </li>
                     <li>
-                      커피챗을 통해 선배 기수는 멘토링 경험 습득과 친목 도모
+                      토끼굴 페이지 - 게시글을 작성 및 수정할 수 있으며,
+                      게시글에 좋아요 와 댓글을 작성할 수 있음
+                    </li>
+                    <li>
+                      정비소 페이지/ 헤더 알림 모달 - 엘리스의 중요 일정을
+                      캘린더를 통해 한 눈에 확인할 수 있으며 공지사항을 확인할
+                      수 있음 / 중요 일정 1시간 전에 리마인드, 게시글에 댓글이
+                      달리면 알림이 옴
+                    </li>
+                    <li>
+                      레이서 오픈 프로필 페이지- 회원이 올린 프로필에 커피챗
+                      신청 기능이 있으며, 커피챗을 신청하면 신청한 회원에게
+                      커피챗 메일이 옴
                     </li>
                   </ul>
                 </section>
@@ -397,26 +404,50 @@
                   <p class="description-content-title">[역할]</p>
                   <ul class="description-text">
                     <li>
-                      공지사항, 일정페이지, 오픈프로필 페이지, 전체 검색 페이지
-                      UI 및 기능 구현
+                      <i class="fa-solid fa-check"></i>
+                      공지사항, 일정페이지, 오픈프로필 페이지, 전체 검색 페이지,
+                      알림 모달, 헤더(메뉴), 푸터 UI 및 기능 구현
                     </li>
-                    <li>알림 모달, 헤더(메뉴), 푸터 UI 및 기능 구현</li>
                     <li>
-                      각 페이지 마다 페이지네이션 또는 무한스크롤 적용, 반응형
-                      웹 적용
+                      <i class="fa-solid fa-check"></i> 각 페이지 마다
+                      페이지네이션 또는 무한스크롤 적용, 반응형 웹 적용
                     </li>
                   </ul>
                   <p class="description-content-title">[성과]</p>
                   <ul class="description-text">
                     <li>
+                      <i class="fa-solid fa-check"></i>
+                      Intersection Observer API와 react-query에
+                      useInfiniteQuery를 사용하여 무한스크롤 적용
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
+                      CSS 미디어 쿼리를 사용하여 데스크탑, 태블릿, 모바일 각
+                      사이즈로 반응형 웹 적용
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
+                      Full-Calendar 라이브러리를 이용하여 서버에서 응답 받은
+                      중요 일정 데이터를 캘린더에 적용
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
+                      공지사항 페이지 검색창에 디바운싱을 활용하여 사용자가
+                      타이핑이 끝난 후에 이벤트를 호출할 수 있도록 하여 이벤트를
+                      최적화 함
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
                       코드 유지보수성 및 재활용성을 높이기 위해 컴포넌트 추상화
                     </li>
                     <li>
+                      <i class="fa-solid fa-check"></i>
                       댓글 알림 및 중요 일정 알림을 서버와 polling 방식으로
                       응답을 주고 받아 실시간으로 업데이트하여 사용자에게 최신
                       정보를 지속적으로 전달
                     </li>
                     <li>
+                      <i class="fa-solid fa-check"></i>
                       react-query를 통해 서버에 요청하여 받아온 데이터를
                       캐싱하여, 이후 동일한 요청을 할 때 불필요한 서버 호출을
                       최소화
@@ -426,7 +457,8 @@
                   <ul class="description-text">
                     <li>
                       <strong class="description-text-strong"
-                        >데이터 캐싱 개념 이해와 활용 가능</strong
+                        ><i class="fa-solid fa-check"></i> 데이터 캐싱 개념
+                        이해와 활용 가능</strong
                       >
                       <p>
                         데이터 캐싱을 활용하여 서버에 반복 요청을 줄여 네트워크
@@ -435,7 +467,19 @@
                     </li>
                     <li>
                       <strong class="description-text-strong"
-                        >중복되는 로직은 custom hook을 만들어 활용</strong
+                        ><i class="fa-solid fa-check"></i> 디바운싱과 쓰로틀링
+                        개념 이해와 활용 가능</strong
+                      >
+                      <p>
+                        이벤트를 제어하는 기법인 디바운싱과 쓰로틀링에 대한
+                        각각에 개념과 사용하는 목적에 대해 알게 되었으며
+                        디바운싱 코드를 hook으로 만들어 활용하였음
+                      </p>
+                    </li>
+                    <li>
+                      <strong class="description-text-strong"
+                        ><i class="fa-solid fa-check"></i> 중복되는 로직은
+                        custom hook을 만들어 활용</strong
                       >
                       <p>
                         프로젝트 중 무한 스크롤을 구현하기 위해 여러
@@ -495,23 +539,39 @@
                   </ul>
                 </section>
                 <section class="description-content purpose">
-                  <p class="description-content-title">[목적]</p>
+                  <p class="description-content-title">[사이트 소개]</p>
                   <ul class="description-text">
                     <li>
-                      전시, 공연, 뮤지컬 등 문화 생활을 즐기는 사람들을 위한
-                      웹사이트
+                      전시, 공연, 뮤지컬 등 다양한 문화 생활의 실제 종이 티켓을
+                      구매하여 설렘을 주는 웹사이트
                     </li>
                     <li>
-                      문화 생활을 즐기기 전 실제 소장 가능한 티켓을 제공하여
-                      설렘을 줌
+                      메인페이지 - 상품 목록 및 상품 상세 보기, 상품 검색,
+                      장바구니 추가, 상품 주문 등을 할 수 있음
+                    </li>
+                    <li>
+                      마이페이지 - 회원 정보 수정, 주문 정보 수정 등을 할 수
+                      있음
+                    </li>
+                    <li>
+                      관리자 페이지 - 상품 및 카테고리 추가 , 수정, 삭제 및 주문
+                      정보 조회, 회원 관리, 추천 상품 등록 등을 할 수 있음
                     </li>
                   </ul>
                 </section>
                 <section class="description-content detail">
                   <p class="description-content-title">[역할]</p>
                   <ul class="description-text">
-                    <li>관리자 페이지 카테고리 목록, 상품 CRUD API 구현</li>
                     <li>
+                      <i class="fa-solid fa-check"></i> 서버 구축, 상품 및
+                      카테고리 스키마 설계
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
+                      관리자 페이지 카테고리 목록, 상품 CRUD API 구현
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
                       메인페이지 상품 검색, 상품 목록(필터 및 페이지네이션),
                       상품상세 API 구현
                     </li>
@@ -519,6 +579,24 @@
                   <p class="description-content-title">[성과]</p>
                   <ul class="description-text">
                     <li>
+                      <i class="fa-solid fa-check"></i> Express를 이용하여 웹
+                      서버 구축
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i> Express를 이용하여 미들
+                      웨어를 통한 에러 핸들링 로직 구현 하여 유지보수 및 가독성
+                      높임
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i> Express를 이용하여 CRUD
+                      RESTfull API를 구현함
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i> POSTMAN으로 구현한 API
+                      기능을 문서화(명세서) 함
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
                       MVC 패턴을 적용하여 코드간의 종속성을 줄이고 구성요소간의
                       역할을 명확하게 하여 유지보수성을 높임
                     </li>
@@ -527,7 +605,8 @@
                   <ul class="description-text">
                     <li>
                       <strong class="description-text-strong"
-                        >클라이언트와 서버 간의 통신 흐름 이해</strong
+                        ><i class="fa-solid fa-check"></i> 클라이언트와 서버
+                        간의 통신 흐름 이해</strong
                       >
                       <p>
                         서버 API 개발을 통해 클라이언트와 서버 간의 데이터
@@ -537,7 +616,8 @@
                     </li>
                     <li>
                       <strong class="description-text-strong"
-                        >NoSQL 데이터베이스 시스템과 원리 이해</strong
+                        ><i class="fa-solid fa-check"></i> NoSQL 데이터베이스
+                        시스템과 원리 이해</strong
                       >
                       <p>
                         기존의 관계형 데이터베이스 시스템과는 다른 방식으로
@@ -596,7 +676,7 @@
                   </ul>
                 </section>
                 <section class="description-content purpose">
-                  <p class="description-content-title">[목적]</p>
+                  <p class="description-content-title">[사이트 소개]</p>
                   <ul class="description-text">
                     <li>
                       다양한 장르의 웹 미니 게임을 제공해주며 랭킹 시스템을 통해
@@ -638,9 +718,12 @@
                 <section class="description-content information">
                   <div class="description-briefly">
                     <p class="description-title">
-                      데이터 리포트 솔루션 - 노리스페이스(Freelancer)
+                      스마트 팩토리(Smart Factory)- 데이터 리포트 솔루션
                     </p>
-                    <p>실시간 재고를 시각화 하여 재고관리 웹 프로젝트</p>
+                    <p>
+                      실시간 재고를 그래프로 시각화 하여 재고를 예측 및 분석
+                      하여 재고 관리를 편리하게 할 수 있는 웹 구현 프로젝트
+                    </p>
                     <img
                       src="assets/img/project4.png"
                       alt="project1"
@@ -648,6 +731,7 @@
                     />
                   </div>
                   <ul class="description-briefly-content">
+                    <li><strong>노리스페이스(Freelancer)</strong></li>
                     <li>
                       <strong>[사용 스택]</strong>
                       <p>React, Chart.js</p>
@@ -663,31 +747,56 @@
                   </ul>
                 </section>
                 <section class="description-content purpose">
-                  <p class="description-content-title">[프로젝트 개요]</p>
+                  <p class="description-content-title">[사이트 소개]</p>
                   <ul class="description-text">
                     <li>
-                      ‘데이터 리포트 솔루션’ 실시간 재고를 시각화 하여 재고관리
-                      웹 구현 프로젝트
+                      재고 현황 실시간 DB 데이터를 활용하여, 동적인 그래프를
+                      시각화 하는 재고 관리 웹페이지
+                    </li>
+                    <li>
+                      메인 페이지 - 전체 재고량(kg) 한달치를 일 단위로 나타내는
+                      그래프와 창고 별마다 온습도를 확인 할 수 있음
+                    </li>
+                    <li>
+                      상세 페이지 - 각 아이템마다 재고량 변화와 사용 내역을
+                      일주일치를 일 단위로 각각의 그래프로 보여주고 재고 수요를
+                      예측해주며, 각 아이템을 추가 및 수정, 삭제를 할 수 있음
+                    </li>
+                    <li>
+                      상세 페이지 -재고량 보고서를 원하는 날짜와 시간을 지정하여
+                      엑셀 파일로 다운로드 받을 수 있으며 보고서 작성 시간
+                      알림을 설정하여 시간마다 보고서를 작성할 수 있도록 해줌
                     </li>
                   </ul>
                 </section>
                 <section class="description-content detail">
-                  <p class="description-content-title">[프로젝트 내용]</p>
-                  <ul class="description-text">
-                    <li>
-                      재고 현황 실시간 DB 데이터를 활용하여, 동적인 그래프가
-                      시각화되는 재고 관리 웹페이지
-                    </li>
-                  </ul>
                   <p class="description-content-title">[역할]</p>
                   <ul class="description-text">
                     <li>
+                      <i class="fa-solid fa-check"></i>
                       Chart.js 라이브러리 활용하여 재고 현황 동적인 그래프
                       시각화 구현
                     </li>
                     <li>
+                      <i class="fa-solid fa-check"></i>
                       아이템 및 디바이스별로 재고 현황 상세 확인 , 재고관리
                       (추가, 수정, 삭제) UI 및 기능 구현
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i> 날짜와 시간을 지정하여
+                      보고서 다운로드, 보고서 작성 시간 알림 지정 UI 및 기능
+                      구현
+                    </li>
+                  </ul>
+                  <p class="description-content-title">[성과]</p>
+                  <ul class="description-text">
+                    <li>
+                      <i class="fa-solid fa-check"></i> Chart.js 라이브러리의
+                      각종 옵션 및 플러그인들을 커스텀하여 활용 가능
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i> Chart.js를 이용하여
+                      동적인 그래프 및 각종 차트 구현 가능
                     </li>
                   </ul>
                 </section>
