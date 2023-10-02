@@ -586,6 +586,12 @@
   font-size: 1.2rem;
 }
 
+.check-icon {
+  color: var(--color-accent);
+  padding: 0.3rem;
+  font-size: 1.4rem;
+}
+
 /* Other Experience */
 #otherExperience {
   position: relative;
