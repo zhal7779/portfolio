@@ -505,23 +505,32 @@
 }
 
 .description-content {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   color: var(--color-text-white);
+  font-size: 1.1rem;
 }
 .description-content.information {
   background-color: var(--color-primary-variant);
-  grid-row: span 2;
+  grid-row: span 3;
   font-size: 1.2rem;
+  padding: 3rem 1.5rem;
 }
 
 .description-content.purpose {
   background-color: var(--color-navy-light);
-  font-size: 1.1rem;
+}
+.description-content.role {
+  background-color: var(--color-navy-bright);
 }
 .description-content.detail {
-  background-color: var(--color-navy-bright);
-  font-size: 1.1rem;
+  background-color: var(--color-navy-blue);
 }
+
+.description-content.review {
+  background-color: var(--color-blue-light);
+  border-radius: 8px;
+}
+
 .description-briefly {
   align-items: center;
   display: flex;
@@ -572,6 +581,7 @@
 .description-content-title {
   font-size: 1.2rem;
   text-align: left;
+  font-weight: 600;
 }
 
 .description-text {
@@ -581,6 +591,11 @@
   padding: 1rem;
   text-align: left;
   margin-bottom: 1rem;
+}
+
+.description-content-title.review,
+.description-text.review {
+  color: var(--color-text-black);
 }
 .description-text-strong {
   font-size: 1.2rem;
