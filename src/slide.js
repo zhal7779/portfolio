@@ -3,11 +3,6 @@
 const slideContent = document.querySelector('.slide-items');
 let slideContentWidth = slideContent.clientWidth;
 
-// // 브라우저 화면이 조정될때 마다 slide 화면의 너비를 변경 해줌
-// window.addEventListener('resize', () => {
-//   slideContentWidth = slideContent.clientWidth;
-// });
-
 // 버튼 엘리먼트 선택하기
 const prevBtn = document.querySelector('.slide-prev-btn');
 const nextBtn = document.querySelector('.slide-next-btn');
