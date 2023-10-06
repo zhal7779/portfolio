@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'root.css';
+
 /* Common */
 .section {
   padding: 4rem;
@@ -264,7 +265,7 @@
 }
 
 .max-container.skills-container {
-  padding: 2rem 3rem;
+  padding: 0 2rem;
 }
 
 .majors {

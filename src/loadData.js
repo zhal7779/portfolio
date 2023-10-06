@@ -3,7 +3,7 @@ function loadData(url, element) {
     .then((response) => response.text())
     .then((data) => {
       const container = document.getElementById(element);
-      container.innerHTML = data;
+      container.insertAdjacentHTML('afterbegin', data);
     })
     .catch((error) => {
       console.error('Error loading template:', error);
