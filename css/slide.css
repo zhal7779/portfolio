@@ -40,6 +40,7 @@ li {
   background-color: var(--color-text-black);
   padding: 3.6rem 0;
   width: 420px;
+  white-space: pre-wrap;
   font-size: 1.8rem;
   font-weight: 600;
   border-radius: 8px;
@@ -101,5 +102,5 @@ li {
   cursor: pointer;
 }
 .slide-pagination > li.active {
-  color: #2fc9eb;
+  color: var(--color-accent);
 }

@@ -38,6 +38,17 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  .slide-item {
+    flex-direction: column;
+  }
+  .slide-item-title {
+    width: auto;
+    padding: 2rem;
+  }
+
+  .title-icon {
+    font-size: 5rem;
+  }
 }
 /* 태블릿, 모바일 가로 */
 @media screen and (max-width: 768px) {
@@ -109,6 +120,25 @@
     bottom: 1.5rem;
     right: 1.5rem;
     line-height: 3rem;
+  }
+
+  .slide-item {
+    padding: 2rem 3rem;
+    gap: 2rem;
+  }
+
+  .slide-item-title {
+    font-size: 1.6rem;
+  }
+  .slide-item-description {
+    font-size: 1rem;
+  }
+  .slide-prev-btn {
+    left: 40px;
+  }
+
+  .slide-next-btn {
+    right: 40px;
   }
 }
 /* 모바일 */
@@ -227,5 +257,12 @@
 
   .experience-item {
     align-items: center;
+  }
+  .slide-prev-btn {
+    left: 10px;
+  }
+
+  .slide-next-btn {
+    right: 10px;
   }
 }
