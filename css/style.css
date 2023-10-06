@@ -594,6 +594,17 @@
   margin-bottom: 1rem;
 }
 
+.description-text-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.description-num-icon {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
 .description-content-title.review,
 .description-text.review {
   color: var(--color-text-black);
