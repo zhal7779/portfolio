@@ -3,10 +3,10 @@
 const slideContent = document.querySelector('.slide-items');
 let slideContentWidth = slideContent.clientWidth;
 
-// 브라우저 화면이 조정될때 마다 slide 화면의 너비를 변경 해줌
-window.addEventListener('resize', () => {
-  slideContentWidth = slideContent.clientWidth;
-});
+// // 브라우저 화면이 조정될때 마다 slide 화면의 너비를 변경 해줌
+// window.addEventListener('resize', () => {
+//   slideContentWidth = slideContent.clientWidth;
+// });
 
 // 버튼 엘리먼트 선택하기
 const prevBtn = document.querySelector('.slide-prev-btn');
@@ -52,6 +52,16 @@ const { newSlideItems, newMaxSideCount } = initializeSlideItems();
 let offset = slideContentWidth * currentSlideItem;
 newSlideItems.forEach((slideItem) => {
   slideItem.setAttribute('style', `left: ${-offset}px`);
+});
+
+// 브라우저 화면이 조정될때 마다 slide 화면의 너비와 offset 너비를 변경하여 반응형 적용
+window.addEventListener('resize', () => {
+  slideContentWidth = slideContent.clientWidth;
+  offset = slideContentWidth * currentSlideItem;
+
+  newSlideItems.forEach((slideItem) => {
+    slideItem.setAttribute('style', `left: ${-offset}px`);
+  });
 });
 
 // 다음 버튼 누를 경우 다음 슬라이드로 이동
