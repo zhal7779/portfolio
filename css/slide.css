@@ -21,15 +21,13 @@ li {
 .slide-item {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 4rem;
   gap: 4rem;
   font-size: 32px;
   left: 0px;
   width: 100%;
   flex-shrink: 0;
-  background-color: var(--color-navy-blue);
+  background-color: var(--color-navy-light);
   color: var(--color-text-white);
   transition: 400ms ease-out;
 }
@@ -37,10 +35,10 @@ li {
 .slide-item-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   gap: 1.5rem;
   background-color: var(--color-text-black);
-  padding: 3rem 0;
+  padding: 3.6rem 0;
   width: 420px;
   font-size: 1.8rem;
   font-weight: 600;
@@ -50,30 +48,30 @@ li {
 
 .title-icon {
   color: var(--color-accent);
-  font-size: 6rem;
+  font-size: 6.5rem;
 }
 
 .slide-item-description {
   display: flex;
   flex-direction: column;
   text-align: start;
-  gap: 0.5rem;
+  padding: 1rem 0;
+  gap: 0.8rem;
   font-size: 1.1rem;
 }
 
 .description-icon {
   color: var(--color-accent);
+  padding-right: 0.5rem;
 }
 
 .slide-prev-btn,
 .slide-next-btn {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #969696;
+  color: #acabab;
   font-size: 42px;
 }
 
@@ -97,7 +95,7 @@ li {
   transform: translateX(-50%);
   font-size: 28px;
   gap: 5px;
-  color: #969696;
+  color: #acabab;
 }
 .slide-pagination > li {
   cursor: pointer;

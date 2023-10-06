@@ -1,7 +1,12 @@
 'use strict';
 // slide 화면 너비 구하기
 const slideContent = document.querySelector('.slide-items');
-const slideContentWidth = slideContent.clientWidth;
+let slideContentWidth = slideContent.clientWidth;
+
+// 브라우저 화면이 변경될때 마다 slide 화면의 너비를 변경 해줌
+window.addEventListener('resize', () => {
+  slideContentWidth = slideContent.clientWidth;
+});
 
 // 버튼 엘리먼트 선택하기
 const prevBtn = document.querySelector('.slide-prev-btn');
